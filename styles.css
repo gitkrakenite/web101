@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Lora", serif; */
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Roboto", sans-serif;
+}
+
+.appWrap {
+  display: flex;
+  gap: 20px;
+}
+
+.sidebar {
+  flex: 0.4;
+  border-right: 1px solid gray;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 1rem 2rem;
+  /* display: none; */
+}
+
+.headerLogo {
+  margin-bottom: 3em;
+}
+
+.headerLogo img {
+  width: 100px;
+  height: 100px;
+}
+
+/* Category */
+.categorySection {
+  margin-bottom: 25px;
+  padding: 1rem;
+
+  box-shadow: 1px 5px 5px 0px rgba(128, 128, 128, 0.75);
+  -webkit-box-shadow: 1px 5px 5px 0px rgba(128, 128, 128, 0.75);
+  -moz-box-shadow: 1px 5px 5px 0px rgba(128, 128, 128, 0.75);
+}
+
+.categorySection h3 {
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.categoryWrapper {
+  padding-left: 2rem;
+}
+
+.categoryList {
+  line-height: 1.8em;
+}
+
+.categoryList a {
+  text-decoration: none;
+  color: rgb(100, 99, 99);
+}
+
+ul {
+  list-style: none;
+}
+
+.active {
+  color: rgb(224, 34, 65) !important;
+}
+
+.categoryList ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* filter section */
+.filterSection {
+  margin-bottom: 25px;
+
+  padding: 1rem;
+
+  box-shadow: 1px 5px 5px 0px rgba(128, 128, 128, 0.75);
+  -webkit-box-shadow: 1px 5px 5px 0px rgba(128, 128, 128, 0.75);
+  -moz-box-shadow: 1px 5px 5px 0px rgba(128, 128, 128, 0.75);
+}
+
+.filterSection h3 {
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.typeText {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filterchecks {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.filtercheckWrapper {
+  padding-left: 2rem;
+}
+
+/* Color picker */
+
+.colorFilter {
+  padding: 1rem;
+
+  box-shadow: 1px 5px 5px 0px rgba(128, 128, 128, 0.75);
+  -webkit-box-shadow: 1px 5px 5px 0px rgba(128, 128, 128, 0.75);
+  -moz-box-shadow: 1px 5px 5px 0px rgba(128, 128, 128, 0.75);
+}
+.colorcheckWrapper {
+  padding-left: 2rem;
+}
+
+.colorCheck {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+/* main feed */
+
+.mainFeed {
+  flex: 2;
+}
+
+.appFeed {
+  /* flex: 2; */
+  padding: 3rem 2rem;
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+.headerSection {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchSect {
+  flex: 1;
+}
+
+.searchSection {
+  display: flex;
+
+  gap: 10px;
+  background-color: rgb(235, 232, 232);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.searchSection input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.headerlastSection {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+.headerLanguage {
+  cursor: pointer;
+}
+
+.headerLanguage span {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.headerLanguage i {
+  /* font-weight: 500; */
+  color: rgb(224, 34, 65);
+  font-size: 18px;
+}
+
+.headerWishList {
+  cursor: pointer;
+}
+
+.headerWishList span {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.headerWishList i {
+  color: rgb(224, 34, 65);
+  font-size: 18px;
+}
+
+.cartSection span {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.cartSection sup {
+  background-color: rgb(224, 34, 65);
+  border-radius: 50%;
+  padding: 5px;
+  color: white;
+  width: 10px;
+  height: 10px;
+}
+.cartSection i {
+  color: rgb(224, 34, 65);
+  font-size: 22px;
+  transition: transform 1s ease-in-out;
+}
+
+.cartSection i:hover {
+  transform: rotate(20deg);
+}
+
+.avatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* product card */
+
+.productSection {
+  margin-top: 20px;
+}
+
+.productWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.productDetails {
+  margin-top: 20px;
+  margin: auto;
+}
+.productDetails img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.productDetailsText {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.productDetailsText p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: gray;
+}
+.productDetailsText i {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: gray;
+  cursor: pointer;
+}
+
+.productDetails i:hover {
+  color: rgb(224, 34, 65);
+}
+
+.productDetailsBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.productDetailsBottom i {
+  color: rgb(224, 34, 65);
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+/* footer */
+
+.footer {
+  height: 8vh;
+  overflow: hidden;
+}
+
+.footer__socials {
+  flex: 1;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.socialImages img {
+  width: 30px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1100px) {
+  .appWrap {
+    display: block;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1701px) {
+  .productWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .headerSection {
+    display: block;
+    gap: 80px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .productWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .productWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 415px) {
+  .productWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .cartSection span {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .cartSection sup {
+    padding: 4px;
+    width: 8px;
+    height: 8px;
+  }
+  .cartSection i {
+    font-size: 18px;
+  }
+
+  .avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .footer__socials {
+    padding: 14px;
+    display: block;
+  }
+
+  .socialImages img {
+    width: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+    margin-bottom: 3px;
+  }
+}
